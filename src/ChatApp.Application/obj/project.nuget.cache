@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "P8WuSx3lYag=",
+  "success": true,
+  "projectFilePath": "/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Application/ChatApp.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/indrit/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

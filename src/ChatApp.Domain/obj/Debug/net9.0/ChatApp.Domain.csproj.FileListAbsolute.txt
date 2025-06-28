@@ -1,0 +1,11 @@
+/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Domain/bin/Debug/net9.0/ChatApp.Domain.deps.json
+/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Domain/bin/Debug/net9.0/ChatApp.Domain.dll
+/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Domain/bin/Debug/net9.0/ChatApp.Domain.pdb
+/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Domain/obj/Debug/net9.0/ChatApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Domain/obj/Debug/net9.0/ChatApp.Domain.AssemblyInfoInputs.cache
+/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Domain/obj/Debug/net9.0/ChatApp.Domain.AssemblyInfo.cs
+/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Domain/obj/Debug/net9.0/ChatApp.Domain.csproj.CoreCompileInputs.cache
+/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Domain/obj/Debug/net9.0/ChatApp.Domain.dll
+/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Domain/obj/Debug/net9.0/refint/ChatApp.Domain.dll
+/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Domain/obj/Debug/net9.0/ChatApp.Domain.pdb
+/home/indrit/dev/learning_csharp/ChatApp/src/ChatApp.Domain/obj/Debug/net9.0/ref/ChatApp.Domain.dll
