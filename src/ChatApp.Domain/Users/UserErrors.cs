@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ChatApp.Domain.Users
 {
-    public class User
+    public class UserError
     {
         
     }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ChatApp.Domain.Users
+namespace ChatApp.Domain.Abstractions
 {
-    public class User
+    public class Result
     {
         
     }
