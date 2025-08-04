@@ -5,8 +5,6 @@ using System.Threading.Tasks;
 
 namespace ChatApp.Application.Rooms.GetRoom
 {
-    public class GetRoomQuery
-    {
-        
-    }
+
+    public record GetRoomQuery(long roomId) : IQuery<RoomResponse>;
 }

@@ -7,6 +7,7 @@ namespace ChatApp.Application.Rooms.Responses
 {
     public class RoomResponse
     {
-        
+        public string Name { get; init; }
+        public List<MemberResponse> Members { get; init; }
     }
 }

@@ -7,6 +7,8 @@ namespace ChatApp.Application.Conversations.ConversationResponse
 {
     public class ConversationResponse
     {
-        
+        public long? RoomId { get; init; }
+        public List<long> Participants { get; init; }
+        public List<MessageResponse> Messages { get; init; }
     }
 }

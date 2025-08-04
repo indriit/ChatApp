@@ -5,8 +5,5 @@ using System.Threading.Tasks;
 
 namespace ChatApp.Application.Users.Login
 {
-    public class AccessTokenResponse
-    {
-        
-    }
+    public sealed record AccessTokenResponse(string accessToken, string username);
 }

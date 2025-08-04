@@ -5,8 +5,5 @@ using System.Threading.Tasks;
 
 namespace ChatApp.Application.Users.Register
 {
-    public class RegisterUserCommand
-    {
-        
-    }
+    public record RegisterUserCommand(string name, string email, string password) : ICommand<long>;
 }

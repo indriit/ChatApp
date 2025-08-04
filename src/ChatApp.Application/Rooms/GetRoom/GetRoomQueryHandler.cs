@@ -2,11 +2,40 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ChatApp.Domain.Abstractions;
+using ChatApp.Domain.Rooms;
 
 namespace ChatApp.Application.Rooms.GetRoom
 {
-    public class GetRoomQueryHandler
+    internal sealed class GetRoomQueryHandler : IQueryHandler<GetRoomQuery, RoomResponse>
     {
-        
+        private readonly IRoomRepository _roomRepository;
+        public GetRoomQueryHandler(IRoomRepository roomRepository)
+        {
+            _roomRepository = roomRepository;
+        }
+
+        public async Task<Result<RoomResponse>> Handle(GetRoomQuery request, CancellationToken cancellationToken)
+        {
+            var room = await _roomRepository.GetByIdWithMembers(request.roomId);
+
+            if (room is null)
+            {
+                return Result.Failure<RoomResponse>(Error.NullValue);
+            }
+
+            var roomResponse = new RoomResponse()
+            {
+                Name = room.Name,
+                Members = room.Members.Select(member => new MemberResponse
+                {
+                    Name = member.User.Name,
+                    Role = member.Role.ToString(),
+                    JoinedOn = member.JoinedOn
+                }).ToList()
+            };
+
+            return roomResponse;
+        }
     }
 }

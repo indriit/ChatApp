@@ -5,8 +5,5 @@ using System.Threading.Tasks;
 
 namespace ChatApp.Application.Conversations.CreateConversation
 {
-    public class CreateConversationCommand
-    {
-        
-    }
+    public record CreateConversationCommand(long? roomId, List<long> participants) : ICommand<string>;
 }

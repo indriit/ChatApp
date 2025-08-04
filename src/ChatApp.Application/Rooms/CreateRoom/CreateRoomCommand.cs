@@ -5,8 +5,5 @@ using System.Threading.Tasks;
 
 namespace ChatApp.Application.Rooms.CreateRoom
 {
-    public class CreateRoomCommand
-    {
-        
-    }
+    public record CreateRoomCommand(string name, string password, long userId) : ICommand<long>;
 }

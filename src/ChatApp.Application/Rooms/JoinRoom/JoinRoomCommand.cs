@@ -5,8 +5,5 @@ using System.Threading.Tasks;
 
 namespace ChatApp.Application.Rooms.JoinRoom
 {
-    public class JoinRoomCommand
-    {
-        
-    }
+    public record JoinRoomCommand(long roomId, long userId) : ICommand<long>;
 }

@@ -5,8 +5,5 @@ using System.Threading.Tasks;
 
 namespace ChatApp.Application.Conversations.GetMessagesByConversationId
 {
-    public class GetMessagesByConversationIdQuery
-    {
-        
-    }
+    public record GetMessagesByConversationIdQuery(string conversationId) : IQuery<List<MessageResponse>>;
 }

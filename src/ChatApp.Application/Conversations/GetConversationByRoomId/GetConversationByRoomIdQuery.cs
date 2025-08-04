@@ -5,8 +5,5 @@ using System.Threading.Tasks;
 
 namespace ChatApp.Application.Conversations.GetConversationByRoomId
 {
-    public class GetConversationByRoomIdQuery
-    {
-        
-    }
+    public record GetConversationByRoomIdQuery(long roomId, int page, int pageSize) : IQuery<ConversationResponse>;
 }

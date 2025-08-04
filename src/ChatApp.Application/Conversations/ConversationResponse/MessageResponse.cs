@@ -7,6 +7,8 @@ namespace ChatApp.Application.Conversations.ConversationResponse
 {
     public class MessageResponse
     {
-        
+        public string SenderName { get; init; }
+        public string Content { get; init; }
+        public DateTime CreatedOn { get; init; }
     }
 }

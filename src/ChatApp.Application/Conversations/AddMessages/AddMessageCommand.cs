@@ -5,8 +5,5 @@ using System.Threading.Tasks;
 
 namespace ChatApp.Application.Conversations.AddMessages
 {
-    public class AddMessageCommand
-    {
-        
-    }
+    public record AddMessageCommand(long roomId, long senderId, string content) : ICommand<string>;
 }
