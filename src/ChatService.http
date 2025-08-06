@@ -1,0 +1,6 @@
+@ConveApp_HostAddress = http://localhost:5223
+
+GET {{ConveApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
